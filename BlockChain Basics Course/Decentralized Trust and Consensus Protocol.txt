@@ -54,8 +54,17 @@ Ethereum:
 -> Time stamp and the nonce in the transaction should be unique and verified to prevent any double use of digital asset.
 
 FORKS:
-
-
+-> Fork, hard fork and soft fork, are most common phrases uttered in the context of a blockchain.
+-> Forks are just normal processes in an evolutionary path of the nascent technology enabling a blockchain.
+-> If robustness and trust is about managing exceptional situations, hard forks and soft forks are indeed at the front and center.
+-> A minor process adjustment has to be carried out typically by bootstrapping a new software to the already running processes. This is soft fork.
+-> For example, the scrypt concept in Bitcoin was introduced using this method. You can think of this as a software patch or a bug fix to address an issue. 
+->  Hard fork implies a major change in the protocol. 
+-> For example, the recent change from Ethereum Homestead to Metropolis Byzantium version was a planned hard fork and important note after a hard fork the emerging two chains are incompatible.
+->  There was an unplanned hard fork in Ethereum protocol, Ethereum Core and Ethereum Classic split, that was enacted to address a critical software issue in a decentralized autonomous organization (DAO). 
+-> That resulted in a multi-million dollar heist.
+->  Forks are mechanisms that add to the robustness of the blockchain framework. 
+-> Well-managed forks help build credibility in the blockchain by providing approaches to manage unexpected faults and planned improvements.
 
 
 TO-DO:
