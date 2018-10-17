@@ -1,0 +1,30 @@
+Kill or Delete a Smart Contract:
+-> To delete or kill a smart contract, Solidity provides a function called self-destruct. 
+-> Understand this call is irreversible as per the default blockchain protocol. 
+-> Once killed, the smart contract cannot be revived or accessed. 
+-> A good programming practice is to make sure only the owner or the owners of the smart contract or an authorized person has permission to self-destruct a contract. 
+-> Assume, a time duration is also specified for the contract. 
+-> Modifiers are used to enforce the destructors address and the time duration for this smart contract.
+-> The smart contract code is removed from the state of the blockchain, if the conditions specified by the modifier are satisfied.
+->  The remaining ethers stored in the address of this smart contract is transferred to the address specified in the parameter of the self-destruct call. 
+-> The smart contract itself is inaccessible by its current address.
+
+Lifetime and Ownership of Smart Contracts:
+-> A smart contract may represent an asset or a business. 
+-> During the lifetime of an asset, ownership may change. 
+-> It may change due to the sale of an asset, donation of an asset or by bequeathment. 
+-> These are just a few. There are many more scenarios for ownership transfer. 
+-> This function can implement a transfer of ownership, but make sure you qualify the transfer with a modifier or modifiers so appropriate rules are enforced from managing ownership and lifetime.
+
+ReUse of Smart Contract Code(Using Inheritance) : 
+-> It is possible a complex application could be composed of many smart contracts, one instantiating the other or inheriting others. 
+-> It is also possible that the symbols or namespace for an organization is defined in a common smart contract that needs to be applied. 
+-> Import command can be used to include files in your smart contract. 
+-> At the time of compilation, associations are made between the imported files and the current smart contract and the byte code is generated based on this association.
+-> Composability, specialization, and generalization are important tenets from object orientation, that can help in designing smart contract solutions for complex problems. 
+-> This also promotes re-usability of code and standards across organization and participants.
+-> As a subtopic of relationship among smart contract, it is possible to create libraries and import existing libraries into your Solidity smart contract code. 
+-> Libraries are special smart contract with no ether balance, no payable functions and no state to be stored in the block chain. 
+-> A fine example is a SafeMath.sol by Zeppelin, that can be included in your smart contract for any math computation. 
+-> Import SafeMath.sol. 
+-> Many libraries are yet to be created.
